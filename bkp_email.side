@@ -1,0 +1,185 @@
+{
+  "id": "799ee267-eb3f-48aa-ae1e-134ffee0e1ec",
+  "version": "2.0",
+  "name": "bkp_email",
+  "url": "https://outlook.live.com",
+  "tests": [{
+    "id": "61f5af5a-41a8-4a67-baa2-b4d75b4b0b34",
+    "name": "Untitled",
+    "commands": [{
+      "id": "36b7bd3b-3c67-484c-876e-75feee73a5e7",
+      "comment": "",
+      "command": "open",
+      "target": "/owa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbefebfc-0675-438d-944f-054b429ffdac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb0a0e62-b83b-4532-81e6-49e725284fc9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Entrar",
+      "targets": [
+        ["linkText=Entrar", "linkText"],
+        ["css=.auxiliary-actions .internal", "css:finder"],
+        ["xpath=//a[contains(text(),'Entrar')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://outlook.live.com/owa/?nlp=1')])[4]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b26e3ee8-9121-432b-823f-3a752ce914c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=i0116",
+      "targets": [
+        ["id=i0116", "id"],
+        ["name=loginfmt", "name"],
+        ["css=#i0116", "css:finder"],
+        ["xpath=//input[@id='i0116']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7ce6021-d843-436a-a041-0fa2f20accbc",
+      "comment": "",
+      "command": "type",
+      "target": "id=i0116",
+      "targets": [
+        ["id=i0116", "id"],
+        ["name=loginfmt", "name"],
+        ["css=#i0116", "css:finder"],
+        ["xpath=//input[@id='i0116']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "uip.decap@policiacivil.sp.gov.br"
+    }, {
+      "id": "51f262e3-e86c-4fc7-a1d1-bd003a6737e8",
+      "comment": "",
+      "command": "click",
+      "target": "id=idSIButton9",
+      "targets": [
+        ["id=idSIButton9", "id"],
+        ["css=#idSIButton9", "css:finder"],
+        ["xpath=//input[@id='idSIButton9']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[4]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d9c7511-cd33-4fb2-ab74-90f8175acd95",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.h2KSz:nth-child(4)",
+      "targets": [
+        ["css=.h2KSz:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='MainModule']/div/div/div[3]/div/div[3]/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Assunto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57811d38-df1a-4f04-a941-5fe8cabd5cc2",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(6) .BptzE > .Idtcl",
+      "targets": [
+        ["css=div:nth-child(6) .BptzE > .Idtcl", "css:finder"],
+        ["xpath=//div[@id='MainModule']/div/div/div/div/div/div/div/div[3]/div[6]/div/span[2]/span/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/span[2]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8948841-5bae-4c50-94a4-6f1e5eef7877",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='AQAAAo5jsrcBAAACoc/WrwAAAAA=']/div/div/div",
+      "targets": [
+        ["css=#AQAAAo5jsrcBAAACoc\\/WrwAAAAA\\= .oJTdD", "css:finder"],
+        ["xpath=//div[@id='AQAAAo5jsrcBAAACoc/WrwAAAAA=']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[4]/div/div/div/div/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e1b15ba-3bbb-44ee-9f76-ac6ecfd191ef",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#AQAAAo5jsrcBAAACoc\\/WrwAAAAA\\= .y1E5h",
+      "targets": [
+        ["css=#AQAAAo5jsrcBAAACoc\\/WrwAAAAA\\= .y1E5h", "css:finder"],
+        ["xpath=//div[@id='AQAAAo5jsrcBAAACoc/WrwAAAAA=']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[4]/div/div/div/div/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8df8dd7a-8bf6-4c21-bdcd-d0405c144d5b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=794b2300-16a8-6e9a-7c66-c76df4e1d82f",
+      "targets": [
+        ["id=794b2300-16a8-6e9a-7c66-c76df4e1d82f", "id"],
+        ["css=#\\37 94b2300-16a8-6e9a-7c66-c76df4e1d82f", "css:finder"],
+        ["xpath=//button[@id='794b2300-16a8-6e9a-7c66-c76df4e1d82f']", "xpath:attributes"],
+        ["xpath=//div[@id='550']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70b9fa48-9a1f-4a16-aeff-2a3dd6a8a220",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=794b2300-16a8-6e9a-7c66-c76df4e1d82f",
+      "targets": [
+        ["id=794b2300-16a8-6e9a-7c66-c76df4e1d82f", "id"],
+        ["css=.ms-Stack-inner > #\\37 94b2300-16a8-6e9a-7c66-c76df4e1d82f", "css:finder"],
+        ["xpath=//button[@id='794b2300-16a8-6e9a-7c66-c76df4e1d82f']", "xpath:attributes"],
+        ["xpath=//div[@id='550']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6fc4786-1e35-478e-82cc-aaf203bfdf33",
+      "comment": "",
+      "command": "click",
+      "target": "id=id__2038",
+      "targets": [
+        ["id=id__2038", "id"],
+        ["css=#id__2038", "css:finder"],
+        ["xpath=//span[@id='id__2038']", "xpath:attributes"],
+        ["xpath=//button[@id='cancel-0']/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span[2]/button/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b4a2717-9ef5-41f2-a472-519a9c72de77",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.dFCbN",
+      "targets": [
+        ["css=.dFCbN", "css:finder"],
+        ["xpath=//div[@id='editorParent_1']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "<div style=\"font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\" class=\"elementToProof\">Backup</div><div class=\"elementToProof\"><div style=\"font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\"><br></div><div id=\"Signature\"><div><div><span style=\"font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\"><img src=\"blob:https://outlook.office365.com/6b0a4e6d-3486-41f7-868c-348e708d7c8a\" style=\"max-width:100%\" class=\"ContentPasted0\" loadstarttime=\"1681839798245\"><br></span></div></div></div></div><span class=\"_Entity _EType_OWA_VirtualEdit_Placeholder _EId_OWA_VirtualEdit_Placeholder _EReadonly_0\" style=\"height: 21px;\"><br></span>"
+    }]
+  }],
+  "suites": [{
+    "id": "26bc658c-a095-425b-9279-679a4eb3eb0a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["61f5af5a-41a8-4a67-baa2-b4d75b4b0b34"]
+  }],
+  "urls": ["https://outlook.live.com/"],
+  "plugins": []
+}
