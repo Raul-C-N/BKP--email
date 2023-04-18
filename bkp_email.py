@@ -44,7 +44,7 @@ driver.find_element(By.ID, "idSIButton9").click()
 
 
 ##SENHA##
-time.sleep(3)
+time.sleep(4)
 driver.find_element(By.ID, "i0118").click()
 driver.find_element(By.ID, "i0118").send_keys(senha)
 #clicar para enviar senha
@@ -52,7 +52,8 @@ driver.find_element(By.ID, "idSIButton9").click()
 
 # SELECIONA TEMP - RECEBIDOS
 
-time.sleep(4)
+time.sleep(8)
+
 # 7 | mouseOver | css=.h2KSz:nth-child(4) | 
 element = driver.find_element(By.CSS_SELECTOR, ".h2KSz:nth-child(4)")
 actions = ActionChains(driver)
@@ -72,7 +73,7 @@ actions.move_to_element(element).perform()
 #Clica no primeiro email apresentado
     #driver.find_element(By.XPATH, "//div[@id=\'AQAAAo5jsrcBAAACoc/YbQAAAAA=\']/div/div/div").click() #Quebrou
     #driver.find_element(By.XPATH, "//*[@id='AQAAAo5jsrcBAAACoc/WigAAAAA=']/div/div/div[1]/div/div[1]/div[1]").click() #Quebrou / USAR POSIÇÃO GLOBAL PARA CLICAR
-
+time.sleep(2)
 #click de área 
 actionChains = ActionChains(driver)
 button_xpath  = "//*[@id='MainModule']/div/div/div[1]/div/div/div/div/div[3]/div[1]/div" #XPATH do botão "caixa de entrada" -> dar offset à direita para clicar - o botão da caixa de entrada sempre estará à esquerda do primeiro email
@@ -92,6 +93,7 @@ driver.find_element(By.XPATH, "//*[@id='editorParent_1']/div/div[1]").send_keys(
 #clica em ENVIAR XPATH do botão "Favoritos" -> dar offset à direita para clicar - o botão da caixa de entrada sempre estará à esquerda do primeiro email
 # botao Favoritos XPATH //*[@id='MainModule']/div/div/div[1]/div/div/div/div/div[1]/div[1]/span
 #click de área 
+time.sleep(3)
 actionChains = ActionChains(driver)
 button_xpath  = "//*[@id='MainModule']/div/div/div[1]/div/div/div/div/div[1]/div[1]/span" #XPATH do botão "Favoritos" -> dar offset à direita 
 button = driver.find_element_by_xpath(button_xpath)
@@ -101,15 +103,18 @@ actionChains.move_to_element(button).move_by_offset(200,0).click().perform()
 
 
 #clica em mover para (envia a tecla 'v')
+time.sleep(3)
 ActionChains(driver)\
     .send_keys("v")\
     .perform()
 
 #digita "Temp - robo enviou" 
+time.sleep(2)
 ActionChains(driver)\
     .send_keys("Temp - robo enviou")\
     .perform()
 #Aperta Enter para completar a movimentação de pasta
+time.sleep(1)
 ActionChains(driver)\
     .send_keys(Keys.ENTER)\
     .perform()
