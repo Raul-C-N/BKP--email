@@ -3,3 +3,5 @@ Primeira versão relativamente funcional. Faz apenas um por vez e fecha o navega
 criar travas para o usuário verificar o andamento (para evitar estragos ao email institucional)
 
 atualizar o método de apertar "Enviar" para utilizar os atalhos de teclado ("Ctrl+Enter").
+
+Adicionar expected_conditions no lugar de time.sleep

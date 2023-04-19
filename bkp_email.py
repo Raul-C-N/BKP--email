@@ -52,19 +52,20 @@ driver.find_element(By.ID, "idSIButton9").click()
 
 # SELECIONA TEMP - RECEBIDOS
 
-time.sleep(4)
+time.sleep(6)
 # 7 | mouseOver | css=.h2KSz:nth-child(4) | 
 element = driver.find_element(By.CSS_SELECTOR, ".h2KSz:nth-child(4)")
 actions = ActionChains(driver)
 actions.move_to_element(element).perform()
 # 8 | click | css=div:nth-child(6) .BptzE > .Idtcl | 
-driver.find_element(By.CSS_SELECTOR, "div:nth-child(6) .BptzE > .Idtcl").click()
+time.sleep(2)
+driver.find_element(By.CSS_SELECTOR, "div:nth-child(6) .BptzE > .Idtcl").click() #ESTE FUNCIONA
 # 9 | click | xpath=//div[@id='AQAAAo5jsrcBAAACoc/WrwAAAAA=']/div/div/div | 
-driver.find_element(By.XPATH, "//div[@id=\'AQAAAo5jsrcBAAACoc/WrwAAAAA=\']/div/div/div").click()
+## driver.find_element(By.XPATH, "//div[@id=\'AQAAAo5jsrcBAAACoc/WrwAAAAA=\']/div/div/div").click() #este não funciona
 # 10 | mouseOver | css=#AQAAAo5jsrcBAAACoc\/WrwAAAAA\= .y1E5h | 
-element = driver.find_element(By.CSS_SELECTOR, "#AQAAAo5jsrcBAAACoc\\/WrwAAAAA\\= .y1E5h")
-actions = ActionChains(driver)
-actions.move_to_element(element).perform()
+## element = driver.find_element(By.CSS_SELECTOR, "#AQAAAo5jsrcBAAACoc\\/WrwAAAAA\\= .y1E5h") #este não funciona
+## actions = ActionChains(driver) #este não funciona
+## actions.move_to_element(element).perform() #este não funciona
 
 # /SELECIONA TEMP - RECEBIDOS
 
@@ -81,8 +82,9 @@ actionChains.move_to_element(button).move_by_offset(200,0).click().perform()
 #click de área
 
 #clica no encaminhamento rápido
+time.sleep(2)
 driver.find_element(By.XPATH, "//*[@id='794b2300-16a8-6e9a-7c66-c76df4e1d82f']/span/div").click() #este aqui funcionou
-time.sleep(4)
+time.sleep(5)
 #Digita texto - âncora para buscar no backup
 driver.find_element(By.XPATH, "//*[@id='editorParent_1']/div/div[1]").send_keys(texto_envio_encaminhamento) #DEFEITO no segundo envio
 
@@ -92,28 +94,43 @@ driver.find_element(By.XPATH, "//*[@id='editorParent_1']/div/div[1]").send_keys(
 #clica em ENVIAR XPATH do botão "Favoritos" -> dar offset à direita para clicar - o botão da caixa de entrada sempre estará à esquerda do primeiro email
 # botao Favoritos XPATH //*[@id='MainModule']/div/div/div[1]/div/div/div/div/div[1]/div[1]/span
 #click de área 
-actionChains = ActionChains(driver)
+"""actionChains = ActionChains(driver)
 button_xpath  = "//*[@id='MainModule']/div/div/div[1]/div/div/div/div/div[1]/div[1]/span" #XPATH do botão "Favoritos" -> dar offset à direita 
 button = driver.find_element_by_xpath(button_xpath)
-actionChains.move_to_element(button).move_by_offset(200,0).click().perform()
+actionChains.move_to_element(button).move_by_offset(200,0).click().perform()"""
+
+
+ActionChains(driver)\
+    .key_down(Keys.CONTROL)\
+    .key_down(Keys.ENTER)\
+    .perform()
+
+ActionChains(driver)\
+    .key_up(Keys.CONTROL)\
+    .key_up(Keys.ENTER)\
+    .perform()
 #/click de área
 # /ENVIAR
 
 
 #clica em mover para (envia a tecla 'v')
+time.sleep(3)
 ActionChains(driver)\
     .send_keys("v")\
     .perform()
 
 #digita "Temp - robo enviou" 
+time.sleep(1)
 ActionChains(driver)\
     .send_keys("Temp - robo enviou")\
     .perform()
 #Aperta Enter para completar a movimentação de pasta
+time.sleep(3)
 ActionChains(driver)\
     .send_keys(Keys.ENTER)\
     .perform()
 
 
 #fecha o navegador
+time.sleep(3)
 driver.close()
